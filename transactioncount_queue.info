@@ -1,0 +1,16 @@
+{
+	"version": 1,
+	"searchBarHelp": "Generate example report of transaction counts, grouped by a user-selected field",
+	"module": "transactioncount_queue",
+	"function": "plugin_main",
+	"optionalArguments": [ 
+		{
+			"name": "-group_by",
+			"searchBarHelp": "Name of field to group the results by (default is instance). Example: -group_by user",
+			"argumentType": "string",
+			"defaultValue" : "queue",
+			"allowMultiple": false,
+			"allowedValues" : ["instance", "url", "user"]
+		}
+	]
+}
